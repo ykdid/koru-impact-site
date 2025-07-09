@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Koru Impact</title>
+    <meta name="description" content="Learn about Koru Impact's mission and founder Şener Cem Irmak, a psychologist and systemic counsellor dedicated to organizational flourishing.">
+    
+    <link rel="icon" href="../assets/koru-impact-logo.jpeg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': '#16A34A',
+                        'secondary-blue': '#2563EB',
+                        'accent-gold': '#FBBF24',
+                        'text-gray': '#1F2937'
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                        'libre': ['Libre Baskerville', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-libre text-text-gray bg-white">
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-primary-green/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="../assets/koru-impact-logo.jpeg" alt="Koru Impact Logo" class="h-8 w-8 object-cover rounded-sm" />
+                    <a href="index.html" class="font-lato font-bold text-2xl text-primary-green hover:scale-105 transition-transform duration-300">
+                      Koru Impact
+                    </a>
+                  </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link active">About Us</a>
+                        <a href="services.html" class="nav-link">Our Services</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-gray hover:text-primary-green focus:outline-none p-2 rounded-lg transition-all duration-300 hover:bg-primary-green/10">
+                        <svg class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-4 pt-2 pb-3 space-y-1 bg-white/98 backdrop-blur-lg border-t border-primary-green/20 shadow-lg">
+                <a href="index.html" class="mobile-nav-link">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        Home
+                    </span>
+                </a>
+                <a href="about.html" class="mobile-nav-link active">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        About Us
+                    </span>
+                </a>
+                <a href="services.html" class="mobile-nav-link">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                        Our Services
+                    </span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Contact
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-16 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="font-lato font-black text-4xl md:text-6xl text-text-gray mb-6 pt-8">
+                    About <span class="text-primary-green">Koru Impact</span>
+                </h1>
+                <p class="font-libre text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto">
+                    Pioneering the intersection of social science, organizational psychology, and sustainable development
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-lato font-bold text-3xl md:text-4xl text-text-gray mb-6">
+                        Our Mission
+                    </h2>
+                    <p class="font-libre text-lg text-gray-600 mb-6 leading-relaxed">
+                        To serve as a catalyst for sustainable human and organizational flourishing. We achieve this by building a synergistic ecosystem where rigorous social science research, evidence-based well-being practices, and purpose-driven consulting converge to empower individuals and organizations to reach their full potential and create a lasting, positive legacy.
+                    </p>
+                    <p class="font-libre text-lg text-gray-600 leading-relaxed">
+                        Koru Impact is a multi-disciplinary strategic consulting firm that operates at the intersection of social science, organizational psychology, and sustainable development. We are dedicated to helping organizations in Turkey and beyond build more resilient, high-performing, and purpose-driven cultures.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-primary-green to-emerald-600 p-8 rounded-2xl text-white shadow-2xl">
+                    <h3 class="font-lato font-bold text-2xl mb-6">Our Unique Value Proposition</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-libre">Rigorous social science research foundation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-libre">Culturally-attuned interventions for Turkish context</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-libre">Integrated four-pillar ecosystem approach</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-libre">UN SDG alignment for sustainable impact</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lato font-bold text-3xl md:text-4xl text-text-gray mb-6">
+                    Meet Our Founder
+                </h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="w-64 h-64 mx-auto lg:mx-0 mb-8 rounded-full overflow-hidden shadow-2xl">
+                        <img src="../assets/sener-cem-irmak.jpg" alt="Şener Cem Irmak" class="w-full h-full object-cover">
+                      </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-lato font-bold text-2xl md:text-3xl text-text-gray mb-4">
+                        Şener Cem Irmak
+                    </h3>
+                    <p class="font-libre text-lg text-primary-green mb-6">
+                        Founder & CEO, Psychologist, Systemic Counsellor
+                    </p>
+                    
+                    <div class="space-y-4 font-libre text-gray-600 leading-relaxed">
+                        <p>
+                            Şener Cem Irmak is a psychologist, systemic counsellor, and the founder of Koru Impact. He is dedicated to promoting mental health and driving organizational flourishing through evidence-based consulting and systemic empathy.
+                        </p>
+                        
+                        <p>
+                            With a unique academic background that combines a Bachelor's degree in Computer Engineering with a Bachelor's in Psychology from Bilkent University, a Master's in Neurobiology and Behavior from Universität Bielefeld, and a Master's in Marriage and Family Therapy/Counseling from Istanbul Medeniyet University, Şener brings a rare, multi-disciplinary perspective to the challenges of the modern workplace.
+                        </p>
+                        
+                        <p>
+                            His professional experience is extensive and diverse, including roles as a Well-being Specialist for global firms like Zevo Health, a counselor for the British International Schools of Istanbul, and a Provisional Psychologist for the Turkish Armed Forces.
+                        </p>
+                        
+                        <p>
+                            As the founder of Koru Impact, Şener now focuses on integrating his expertise in psychology, technology, and systems thinking to help organizations build healthier, more resilient, and more impactful cultures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lato font-bold text-3xl md:text-4xl text-text-gray mb-6">
+                    Our Core Values
+                </h2>
+                <p class="font-libre text-lg text-gray-600 max-w-3xl mx-auto">
+                    These principles guide every decision we make and every solution we deliver
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-2xl border-2 border-green-100 hover:border-primary-green transition-all duration-300 hover:shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-lato font-bold text-xl text-text-gray mb-4">Evidence-Based Rigor</h3>
+                    <p class="font-libre text-gray-600">
+                        Every intervention, strategy, and recommendation is grounded in solid research and proven methodologies, ensuring reliable and measurable outcomes.
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl border-2 border-green-100 hover:border-primary-green transition-all duration-300 hover:shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-lato font-bold text-xl text-text-gray mb-4">Systemic Empathy</h3>
+                    <p class="font-libre text-gray-600">
+                        We deeply understand the cultural nuances and human dynamics that drive organizational behavior, especially within the Turkish business context.
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl border-2 border-yellow-100 hover:border-accent-gold transition-all duration-300 hover:shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent-gold to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-lato font-bold text-xl text-text-gray mb-4">Purpose-Driven Impact</h3>
+                    <p class="font-libre text-gray-600">
+                        We believe business success and social good are not mutually exclusive. Our work aligns corporate objectives with meaningful societal impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-r from-primary-green via-emerald-600 to-teal-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-lato font-bold text-3xl md:text-4xl text-white mb-6">
+                Ready to Partner with Us?
+            </h2>
+            <p class="font-libre text-xl text-green-100 mb-8">
+                Let's explore how our expertise can drive your organization's transformation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="services.html" class="btn-white">
+                    Explore Our Services
+                </a>
+                <a href="contact.html" class="btn-outline-white">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="font-lato font-bold text-2xl mb-4 text-primary-green">Koru Impact</h3>
+                    <p class="font-libre text-gray-300 mb-4">
+                        Catalyst for sustainable human and organizational flourishing through evidence-based consulting and systemic empathy.
+                    </p>
+                    <p class="font-libre text-gray-400 text-sm">
+                        © 2025 Koru Impact. All rights reserved.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-lato font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary-green transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary-green transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary-green transition-colors">Our Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-lato font-bold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-300 mb-2">info@koruimpact.org</p>
+                    <p class="text-gray-300">Istanbul, Turkey</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

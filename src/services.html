@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Koru Impact</title>
+    <meta name="description" content="Discover Koru Impact's four pillars: Social Science Research, B2B Well-being Services, Professional Education, and UN SDG Consulting.">
+    
+    <link rel="icon" href="../assets/koru-impact-logo.jpeg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': '#16A34A',
+                        'secondary-blue': '#2563EB',
+                        'accent-gold': '#FBBF24',
+                        'text-gray': '#1F2937'
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                        'libre': ['Libre Baskerville', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-libre text-text-gray bg-white">
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-primary-green/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="../assets/koru-impact-logo.jpeg" alt="Koru Impact Logo" class="h-8 w-8 object-cover rounded-sm" />
+                    <a href="index.html" class="font-lato font-bold text-2xl text-primary-green hover:scale-105 transition-transform duration-300">
+                      Koru Impact
+                    </a>
+                  </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About Us</a>
+                        <a href="services.html" class="nav-link active">Our Services</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-gray hover:text-primary-green focus:outline-none p-2 rounded-lg transition-all duration-300 hover:bg-primary-green/10">
+                        <svg class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-4 pt-2 pb-3 space-y-1 bg-white/98 backdrop-blur-lg border-t border-primary-green/20 shadow-lg">
+                <a href="index.html" class="mobile-nav-link">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        Home
+                    </span>
+                </a>
+                <a href="about.html" class="mobile-nav-link">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        About Us
+                    </span>
+                </a>
+                <a href="services.html" class="mobile-nav-link active">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                        Our Services
+                    </span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Contact
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-16 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="font-lato font-black text-4xl md:text-6xl text-text-gray mb-6 pt-8">
+                    Our <span class="text-primary-green">Four Pillars</span>
+                </h1>
+                <p class="font-libre text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto">
+                    An integrated ecosystem of services designed to drive sustainable organizational transformation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lato font-bold text-3xl md:text-4xl text-text-gray mb-6">
+                    Comprehensive Solutions for Modern Organizations
+                </h2>
+                <p class="font-libre text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our unique four-pillar approach ensures that every intervention is research-backed, culturally relevant, and aligned with global sustainability goals.
+                </p>
+            </div>
+
+            <div class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary-green to-emerald-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-lato font-bold text-xl">1</span>
+                            </div>
+                            <h3 class="font-lato font-bold text-2xl md:text-3xl text-text-gray">
+                                Social Science Research
+                            </h3>
+                        </div>
+                        <p class="font-libre text-sm text-gray-500 mb-4">NACE 72.20</p>
+                        <p class="font-libre text-lg text-gray-600 mb-6 leading-relaxed">
+                            Our intellectual engine conducts rigorous research on well-being in the Turkish cultural context. We develop evidence-based insights that form the foundation of all our interventions, ensuring that our solutions are not just theoretically sound but practically effective within local organizational dynamics.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Cultural context research and analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Organizational psychology studies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Well-being measurement frameworks</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-100 to-emerald-200 p-8 rounded-2xl shadow-lg">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-lato font-bold text-xl text-text-gray text-center mb-4">Research Impact</h4>
+                        <p class="font-libre text-gray-600 text-center">
+                            Our research forms the evidence base for all interventions, ensuring culturally relevant and scientifically sound solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-lato font-bold text-xl">2</span>
+                            </div>
+                            <h3 class="font-lato font-bold text-2xl md:text-3xl text-text-gray">
+                                B2B Well-being & Psychological Services
+                            </h3>
+                        </div>
+                        <p class="font-libre text-sm text-gray-500 mb-4">NACE 70.20 & 86.93</p>
+                        <p class="font-libre text-lg text-gray-600 mb-6 leading-relaxed">
+                            Our commercial core delivers bespoke programs that enhance psychological safety and drive performance. We move beyond generic solutions to provide culturally-attuned interventions that tangibly improve employee well-being and business outcomes.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Employee well-being assessments</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Psychological safety interventions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Leadership development programs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:order-1 bg-gradient-to-br from-emerald-100 to-teal-200 p-8 rounded-2xl shadow-lg">
+                        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-lato font-bold text-xl text-text-gray text-center mb-4">Well-being Focus</h4>
+                        <p class="font-libre text-gray-600 text-center">
+                            Bespoke interventions that enhance psychological safety while driving measurable business performance improvements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent-gold to-orange-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-lato font-bold text-xl">3</span>
+                            </div>
+                            <h3 class="font-lato font-bold text-2xl md:text-3xl text-text-gray">
+                                Professional Education & Content Distribution
+                            </h3>
+                        </div>
+                        <p class="font-libre text-sm text-gray-500 mb-4">NACE 85.61 & 60.20</p>
+                        <p class="font-libre text-lg text-gray-600 mb-6 leading-relaxed">
+                            Our thought leadership platform systematically packages insights from our applied work into world-class content, upskilling the professional community and establishing Koru Impact as a leading voice in organizational well-being.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Professional certification programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Thought leadership content</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Digital learning platforms</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-100 to-orange-200 p-8 rounded-2xl shadow-lg">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent-gold to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-lato font-bold text-xl text-text-gray text-center mb-4">Knowledge Sharing</h4>
+                        <p class="font-libre text-gray-600 text-center">
+                            Transforming practical insights into accessible education that upskills the professional community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary-blue to-indigo-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-lato font-bold text-xl">4</span>
+                            </div>
+                            <h3 class="font-lato font-bold text-2xl md:text-3xl text-text-gray">
+                                UN SDG & Social Impact Consulting
+                            </h3>
+                        </div>
+                        <p class="font-libre text-sm text-gray-500 mb-4">NACE 70.20</p>
+                        <p class="font-libre text-lg text-gray-600 mb-6 leading-relaxed">
+                            Our purpose-driven apex guides businesses in aligning their operations with the UN Sustainable Development Goals. We help organizations create lasting positive impact while maintaining strong business performance, proving that profit and purpose can coexist.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary-blue mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">SDG alignment strategies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary-blue mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Impact measurement frameworks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary-blue mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="font-libre text-gray-600">Sustainability reporting</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:order-1 bg-gradient-to-br from-blue-100 to-indigo-200 p-8 rounded-2xl shadow-lg">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary-blue to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-lato font-bold text-xl text-text-gray text-center mb-4">Global Impact</h4>
+                        <p class="font-libre text-gray-600 text-center">
+                            Aligning business strategy with UN Sustainable Development Goals for meaningful, measurable global impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lato font-bold text-3xl md:text-4xl text-text-gray mb-6">
+                    The Power of Integration
+                </h2>
+                <p class="font-libre text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our four pillars work synergistically to create a comprehensive ecosystem that delivers sustainable organizational transformation.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-white font-lato font-bold text-xl">1</span>
+                    </div>
+                    <h4 class="font-lato font-bold text-lg text-text-gray mb-2">Research Foundation</h4>
+                    <p class="font-libre text-sm text-gray-600">Evidence-based insights inform all interventions</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-white font-lato font-bold text-xl">2</span>
+                    </div>
+                    <h4 class="font-lato font-bold text-lg text-text-gray mb-2">Applied Solutions</h4>
+                    <p class="font-libre text-sm text-gray-600">Practical interventions drive real results</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent-gold to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-white font-lato font-bold text-xl">3</span>
+                    </div>
+                    <h4 class="font-lato font-bold text-lg text-text-gray mb-2">Knowledge Sharing</h4>
+                    <p class="font-libre text-sm text-gray-600">Insights become accessible education</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary-blue to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-white font-lato font-bold text-xl">4</span>
+                    </div>
+                    <h4 class="font-lato font-bold text-lg text-text-gray mb-2">Global Impact</h4>
+                    <p class="font-libre text-sm text-gray-600">Purpose-driven transformation at scale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-r from-primary-green via-emerald-600 to-teal-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-lato font-bold text-3xl md:text-4xl text-white mb-6">
+                Ready to Transform Your Organization?
+            </h2>
+            <p class="font-libre text-xl text-green-100 mb-8">
+                Let's discuss how our integrated approach can drive sustainable change in your organization.
+            </p>
+            <a href="contact.html" class="btn-white">
+                <span>Start the Conversation</span>
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="font-lato font-bold text-2xl mb-4 text-primary-green">Koru Impact</h3>
+                    <p class="font-libre text-gray-300 mb-4">
+                        Catalyst for sustainable human and organizational flourishing through evidence-based consulting and systemic empathy.
+                    </p>
+                    <p class="font-libre text-gray-400 text-sm">
+                        © 2025 Koru Impact. All rights reserved.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-lato font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary-green transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary-green transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary-green transition-colors">Our Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-lato font-bold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-300 mb-2">info@koruimpact.org</p>
+                    <p class="text-gray-300">Istanbul, Turkey</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
